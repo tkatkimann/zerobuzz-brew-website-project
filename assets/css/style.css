@@ -1,4 +1,4 @@
-/* makes sizing simpler */
+
 *,
 *::before,
 *::after {
@@ -19,12 +19,11 @@ html {
 }
 
 
-/* responsive images/videos */
+/* responsive images */
 
 img,
 picture,
-svg,
-video {
+svg {
   display: block;
   max-width: 100%;
 }
@@ -71,6 +70,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -79,13 +79,7 @@ p {
 }
 
 
-body{
-  font-family: "Open sans", sans-serif;
-  background-color: var(--primary-1-color);
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.5;
-}
+
 
 main {
   max-width: 900px;
@@ -99,4 +93,77 @@ h2 {
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+nav{
+  background-color: #fe636b;
+  box-shadow: 3px 3px 5px rgb(0,0,0,0.2);
+}
+
+nav ul{
+  width:100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+nav li{
+  height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px; 
+  text-decoration: none; 
+  display:flex;
+  align-items:center;
+  color: white; 
+}
+
+nav a:hover{
+  background-color: #e15058;
+}
+
+nav li:first-child{
+  margin-right:auto;
+}
+
+.sidebar{
+  position:fixed;
+  top: 0;
+  left:0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #fe636b;
+  box-shadow: 10px 0 10px rgb(0,0,0,0.1); 
+  display: none;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content:start;
+}
+
+.burgermenu-button{
+  display:none;
+}
+
+.sidebar li{
+  width:100%;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display:none;
+  }
+  .burgermenu-button{
+    display:block;
+  }
 }
