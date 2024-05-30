@@ -33,13 +33,6 @@ img {
   max-block-size: 100%;
 }
 
-/* Smooth scrolling for users that don't prefer reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-  :has(:target) {
-    scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
-  }
-}
 
 /* Improve media defaults */
 img,
@@ -76,19 +69,17 @@ p {
 }
 
 
-
-
 main {
   max-width: 700px;
   margin: auto;
 }
 
 h2 {
-  font-size: 1 rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -96,6 +87,21 @@ body{
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 70px; /* Tilføj mere mellemrum over indholdet */
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Sørg for at navbaren vises øverst */
+  background-color: #fe636b; /* Behold den samme baggrundsfarve */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Behold skyggen */
 }
 
 nav{
@@ -224,7 +230,7 @@ nav li:first-child{
 }
 
 .indhold{
-  padding: 20px;
+  padding: 30px;
 
 }
 
@@ -236,7 +242,58 @@ nav li:first-child{
   padding: 20px;
 }
 
-.forside-billede{
+.runde-hjørner{
   border-radius: 15px;
+}
+
+
+/***STYLLING AF FOOOTER NEDENUNDER ****/
+
+footer {
+  background-color: #e15058;
+  position: relative;
+  padding-bottom: 50px; /* Tilføj padding for at skabe plads til copyright teksten */
+}
+
+.footer-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Fordel pladsen jævnt mellem elementer */
+  align-items: flex-end; /* Juster elementerne til bunden */
+ 
+}
+
+
+.footer-info{
+  color: white;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center; /* Centrer elementerne lodret */
+  margin-left: auto; /* Flyt elementerne til højre */
+}
+
+.footer-social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Placer elementerne vandret */
+}
+
+.footer-social-media li {
+  margin-left: 10px; /* Tilføj mellemrum mellem ikonerne */
+}
+
+
+.copyright {
+  padding: 10px 0 15px 0;
+  color: white; 
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Sørg for at copyright teksten er centreret */
 }
 
