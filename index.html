@@ -21,10 +21,10 @@
     <!--Overskriften er  font-family: "Montserrat", sans-serif; -->
 
     <link rel="stylesheet" href="assets/css/style.css"> 
-    <link rel="script.js" href="script.js"> 
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-
 
 
 <body id="body">
@@ -34,7 +34,14 @@
         <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="26px" height="26px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
         <li><a href="#">Forside</a></li>
         <li><a href="#">Event</a></li>
-        <li><a href="#">Seasonøl</a></li>
+        <li class="dropdown"><a href="#" onclick="toggleDropdown(event, 'season-dropdown')">Seasonøl hi<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu" id="season-dropdown">
+            <li><a href="#">Sommerøl</a></li>
+            <li><a href="#">Efterårsøl</a></li>
+            <li><a href="#">Påskeøl</a></li>
+            <li><a href="#">Juleøl</a></li>
+          </ul>
+        </li>
         <li><a href="#">Smagsvarianter</a></li>
         <li><a href="#">Kurv</a></li>
       </ul>
@@ -44,67 +51,120 @@
         <li class="logo-container">
           <img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo">
         </li>
-
-        
         <li class="hideOnMobile"><a href="#">Forside</a></li>
         <li class="hideOnMobile"><a href="#">Event</a></li>
-        <li class="hideOnMobile"><a href="#">Seasonøl</a></li>
+        <li class="hideOnMobile dropdown"><a href="#">Seasonøl<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sommerøl</a></li>
+            <li><a href="#">Efterårsøl</a></li>
+            <li><a href="#">Påskeøl</a></li>
+            <li><a href="#">Juleøl</a></li>
+          </ul>
+        </li>
         <li class="hideOnMobile"><a href="#">Smagsvarianter</a></li>
         <li><a href="#"><img src="assets/icons/shopping-cart-24.png" alt = ""></a></li>
       </ul>
     </nav>
   </header>
 
-  <script>
-    function showSidebar(){
-      const sidebar = document.querySelector ('.sidebar')
-      sidebar.style.display = 'flex'
-    }
-    function hideSidebar(){
-      const sidebar = document.querySelector ('.sidebar')
-      sidebar.style.display = 'none'
-    }
-  </script>
-
+  <!--INDHOLDET STARTER NEDENUNDER-->
 
   <main>
-    <section>
+    <section class="indhold">
       <section>
-        <img src="assets/images/multi-dåser-with-reviews.webp">
+        <img class="forside-billede"src="assets/images/multi-dåser-with-reviews.webp" alt= “ZeroBuzz Brew’s alkoholfri øl med reviews. Kappen på billedet føres videre til shoppen med smagsvarianter">
       </section>
-    <article>
-      <h2>Velkommen til ZeroBuzz Brew! En verden af forfriskende og smagfulde alkoholfri øl!</h2>
-      <p>Her hos os finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold. Tag med på en smagfuld rejse og udforsk vores unikke bryggede øl, lavet med frugtsmag, der giver en behagelig syrlig og sød tone, som overgår øllets bitterhed. </p>
+          <article class="tekst-indhold">
+            <h2>Velkommen til ZeroBuzz Brew! En verden af forfriskende og smagfulde alkoholfri øl!</h2>
+            <p>Her hos os finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold. Tag med på en smagfuld rejse og udforsk vores unikke bryggede øl, lavet med frugtsmag, der giver en behagelig syrlig og sød tone, som overgår øllets bitterhed. </p>
 
-      <br>
+            <br>
 
-      <p>Vi garanterer dig for at vores øl vil forkæle dine smagsløg med en række  unikke smagsvarianter. Vores øl er skabt med omtanke for både erfarne øldrikker og  ikke-øldrikkere, da vi fokuserer på at fremme en sund livsstil og trivsel gennem vores produkter.</p>
+            <p>Vi garanterer dig for at vores øl vil forkæle dine smagsløg med en række  unikke smagsvarianter. Vores øl er skabt med omtanke for både erfarne øldrikker og  ikke-øldrikkere, da vi fokuserer på at fremme en sund livsstil og trivsel gennem vores produkter.</p>
 
-      <br>
+            <br>
 
-      <p>Du kan finde vores alkoholfri øl i følgende butikker:</p>
-      <ul>
-        <li>7-eleven </li>
-        <li>Aldi</li>
-        <li>Bilka</li>
-        <li>Lidl</li>
-        <li>Coop</li>
-        <li>Kvickly</li>
-      </ul>
+            <p>Du kan finde vores alkoholfri øl i følgende butikker:</p>
+            <ul class="punkter">
+            <li>7-eleven </li>
+            <li>Aldi</li>
+            <li>Bilka</li>
+            <li>Lidl</li>
+            <li>Coop</li>
+            <li>Kvickly</li>
+            </ul>
+    
+          </article>
 
-      <br>
 
       <section>
-        <img src="assets/images/friends-holding-drinks-together-event.webp">
+        <img class="forside-billede" src="assets/images/friends-holding-drinks-together-event.webp" alt="">
       </section>
-
+    
+   
+      <article>
       <p>ZeroBuzz Brew præsenterer med stolthed, The Zero Brew Haus, et spændende mødested, hvor ølentusiaster kan samles og udforske vores mangfoldige udvalg af alkoholfri øl. Kom og være med i vores hyggelige oase og del glæden sammen med andre.</p>
-
       <button>Tryk her for at læse mere </button>
-
-    </article>
-  </section>
+      </article>
+    
+    </section>
   </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div>
+        <section class="location">
+          <h3>ZeroBuzz Brew</h3>
+          </a>
+        </section>
+        <section class="contact">
+          <h3>Kontakt os </h3>
+          <span
+            >E-mail: forbrugerservice@zerobuzzbrew.dk</a
+            ></span>
+
+        </section>
+        <section class="opening-hours">
+        </section>
+      </div>
+      <section class="footer-social">
+        <a href="/"
+          ><img class="footer-logo" src="assets/icons/logo/black-logo.webp" alt="Zerobuzz brew logo i sort farve" height="26px"
+        /></a>
+        <ul>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="facebook"
+              ><img src="assets/icons/social-media-icons/icons8-facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="instagram"
+              ><img src="assets/icons/social-media-icons/icons8-instagram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="tiktok"
+              ><img src="assets/icons/social-media-icons/icons8-tiktok.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+    <div class="copyright">
+      <small>&copy; Copyright 2024, ZeroBuzzBrew</small>
+    </div>
+  </footer>
+ 
 
  
 </body>
