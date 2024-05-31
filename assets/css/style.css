@@ -268,7 +268,7 @@ nav li:first-child{
   border-radius: 10px; /* eller hvor meget du vil runde hjørnerne */
 }
 
-.btn {
+.btn-link {
   position: absolute;
   bottom: 40px; /* Juster disse værdier efter behov */
   left: 25px;   /* Juster disse værdier efter behov */
@@ -281,14 +281,20 @@ nav li:first-child{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-decoration: none; /* Fjerner understregning fra ankerelementet */
+  display: inline-block; /* Sikrer, at knapstilen anvendes korrekt */
 }
 
-.btn:active {
+.btn-link:hover {
+  background-color: #ff4f58; /* Ændrer baggrundsfarve ved hover */
+}
+
+.btn-link:active {
   transform: scale(0.96);
 }
 
 
-.btn2 {
+.btn2-link {
   margin-top: 0px;
   background-color: #3D71C0;
   color: white;
@@ -299,9 +305,15 @@ nav li:first-child{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-decoration: none; /* Fjerner understregning fra ankerelementet */
+  display: inline-block; /* Sikrer, at knapstilen anvendes korrekt */
 }
 
-.btn2:active {
+.btn2-link:hover {
+  background-color: #305e9b; /* Ændrer baggrundsfarve ved hover */
+}
+
+.btn2-link:active {
   transform: scale(0.96);
 }
 

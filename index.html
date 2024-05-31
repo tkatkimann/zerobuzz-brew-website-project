@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--Overskriften er  font-family: "Montserrat", sans-serif; -->
-
+    <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css"> 
     <script src="script.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -57,7 +57,7 @@
         <li><a href="kurv.html">Kurv</a></li>
       </ul>
       <ul>
-        <li class="burgermenu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="26px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg></a></li>
+        <li class="burgermenu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="26px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg></a></li>
 
         <li class="logo-container">
           <a href="index.html"><img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo"></a>
@@ -87,7 +87,8 @@
         <img class="runde-hjørner" src="assets/images/multi-dåser-with-reviews.webp" alt="ZeroBuzz Brew’s alkoholfri skommerøl med reviews. Kappen på billedet føres videre til shoppen med smagsvarianter">
 
 
-        <a href="smagsvarianter.html"><button class="btn">Shop</button></a>
+       <a href="smagsvarianter.html" class="btn-link">Shop</a>
+
       </section>
           <article class="tekst-indhold">
             <h2>Velkommen til ZeroBuzz Brew! En verden af forfriskende og smagfulde alkoholfri øl!</h2>
@@ -120,7 +121,8 @@
       <article>
       <p>ZeroBuzz Brew præsenterer med stolthed, The Zero Brew Haus, et spændende mødested, hvor ølentusiaster kan samles og udforske vores mangfoldige udvalg af alkoholfri øl. Kom og være med i vores hyggelige oase og del glæden sammen med andre.</p>
 
-      <a href="event.html"><button class="btn2">Tryk her for at læse mere </button></a>
+      <a href="event.html" class="btn2-link">Tryk her for at læse mere</a>
+
       </article>
     
     </section>
@@ -143,17 +145,17 @@
         <section class="footer-social-media">
           <ul>
             <li>
-              <a href="#" target="_blank" class="facebook"
+              <a href="#" class="facebook"
                 ><img src="assets/icons/social-media-icons/icons8-facebook.svg" alt="facebook ikon"
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank" class="instagram"
+              <a href="#" class="instagram"
                 ><img src="assets/icons/social-media-icons/icons8-instagram.svg" alt="Instagram ikon"
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank" class="tiktok"
+              <a href="#" class="tiktok"
                 ><img src="assets/icons/social-media-icons/icons8-tiktok.svg" alt="tiktok ikon"
               /></a>
             </li>
