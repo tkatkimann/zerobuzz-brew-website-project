@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeroBuzzBrew | Forside </title>
-    <link rel="sitemap" href="/sitemap.xml" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hos ZeroBuzz Brew finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold.">
+
+    <meta name="keywords" content="ZeroBuzz Brew, bryggeri i Danmark, de bedste alkoholfri øl, lækker alkoholfri øl, sund alkoholfri øl, alkoholfri øl uden alkohol, sundhed, alkoholfri øl med mango, alkoholfri øl med citrus, alkoholfri øl med lidt alkohol, alkoholfri øl med sodavandsmag, alkoholfri øl og sundhed, alkoholfri øl med venner, alkoholfri øl er sundt, alkoholfri øl i fællesskabet">
+
+    <meta name="author" content="tkatkimann">
+
+
+    <link rel="sitemap" href="sitemap.xml" />
     <link rel="icon" href="assets/icons/favicon-io/favicon.ico" type="image/x-icon"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +43,8 @@
     <nav class="fixed-nav">
       <ul class="sidebar">
         <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="26px" height="26px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
-        <li><a href="#">Forside</a></li>
-        <li><a href="#">Event</a></li>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="event.html">Event</a></li>
         <li class="dropdown"><a href="#" onclick="toggleDropdown(event, 'season-dropdown')">Seasonøl hi<i class="fas fa-caret-down"></i></a>
           <ul class="dropdown-menu" id="season-dropdown">
             <li><a href="#">Sommerøl</a></li>
@@ -43,18 +53,18 @@
             <li><a href="#">Juleøl</a></li>
           </ul>
         </li>
-        <li><a href="#">Smagsvarianter</a></li>
-        <li><a href="#">Kurv</a></li>
+        <li><a href="smagsvarianter.html">Smagsvarianter</a></li>
+        <li><a href="kurv.html">Kurv</a></li>
       </ul>
       <ul>
         <li class="burgermenu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="26px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg></a></li>
 
         <li class="logo-container">
-          <img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo">
+          <a href="index.html"><img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo"></a>
         </li>
-        <li class="hideOnMobile"><a href="#">Forside</a></li>
-        <li class="hideOnMobile"><a href="#">Event</a></li>
-        <li class="hideOnMobile dropdown"><a href="#">Seasonøl<i class="fas fa-caret-down"></i></a>
+        <li class="hideOnMobile"><a href="index.html">Forside</a></li>
+        <li class="hideOnMobile"><a href="event.html">Event</a></li>
+        <li class="hideOnMobile dropdown"><a href="season-oel.html">Seasonøl<i class="fas fa-caret-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="#">Sommerøl</a></li>
             <li><a href="#">Efterårsøl</a></li>
@@ -62,8 +72,8 @@
             <li><a href="#">Juleøl</a></li>
           </ul>
         </li>
-        <li class="hideOnMobile"><a href="#">Smagsvarianter</a></li>
-        <li><a href="#"><img src="assets/icons/shopping-cart-24.png" alt = ""></a></li>
+        <li class="hideOnMobile"><a href="smagsvarianter.html">Smagsvarianter</a></li>
+        <li><a href="kurv.html"><img src="assets/icons/shopping-cart-24.png" alt = ""></a></li>
       </ul>
     </nav>
   </header>
@@ -72,20 +82,24 @@
 
   <main>
     <section class="indhold">
-      <section>
-        <img class="runde-hjørner"src="assets/images/multi-dåser-with-reviews.webp" alt= “ZeroBuzz Brew’s alkoholfri skommerøl med reviews. Kappen på billedet føres videre til shoppen med smagsvarianter">
+      <h1>ZeroBuzz Brew</h1>
+      <section class="forside-billede1">
+        <img class="runde-hjørner" src="assets/images/multi-dåser-with-reviews.webp" alt="ZeroBuzz Brew’s alkoholfri skommerøl med reviews. Kappen på billedet føres videre til shoppen med smagsvarianter">
+
+
+        <a href="smagsvarianter.html"><button class="btn">Shop</button></a>
       </section>
           <article class="tekst-indhold">
             <h2>Velkommen til ZeroBuzz Brew! En verden af forfriskende og smagfulde alkoholfri øl!</h2>
             <p>Her hos os finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold. Tag med på en smagfuld rejse og udforsk vores unikke bryggede øl, lavet med frugtsmag, der giver en behagelig syrlig og sød tone, som overgår øllets bitterhed. </p>
 
-            <br>
+            
 
             <p>Vi garanterer dig for at vores øl vil forkæle dine smagsløg med en række  unikke smagsvarianter. Vores øl er skabt med omtanke for både erfarne øldrikker og  ikke-øldrikkere, da vi fokuserer på at fremme en sund livsstil og trivsel gennem vores produkter.</p>
 
-            <br>
-
-            <p>Du kan finde vores alkoholfri øl i følgende butikker:</p>
+            
+            
+            <p class="ingen">Du kan finde vores alkoholfri øl i følgende butikker:</p>
             <ul class="punkter">
             <li>7-eleven </li>
             <li>Aldi</li>
@@ -94,7 +108,7 @@
             <li>Coop</li>
             <li>Kvickly</li>
             </ul>
-    
+            
           </article>
 
 
@@ -105,7 +119,8 @@
    
       <article>
       <p>ZeroBuzz Brew præsenterer med stolthed, The Zero Brew Haus, et spændende mødested, hvor ølentusiaster kan samles og udforske vores mangfoldige udvalg af alkoholfri øl. Kom og være med i vores hyggelige oase og del glæden sammen med andre.</p>
-      <button>Tryk her for at læse mere </button>
+
+      <a href="event.html"><button class="btn2">Tryk her for at læse mere </button></a>
       </article>
     
     </section>
