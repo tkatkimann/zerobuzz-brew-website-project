@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="Hos ZeroBuzz Brew finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold." content="webshop foralkoholfri øl">
+    <meta name="description" content="Hos ZeroBuzz Brew finder du et bredt udvalg af de sødeste og mest lækre alkoholfri øl med kun 0,5 % alkoholindhold.">
 
     <meta name="keywords" content="ZeroBuzz Brew, bryggeri i Danmark, de bedste alkoholfri øl, lækker alkoholfri øl, sund alkoholfri øl, alkoholfri øl uden alkohol, sundhed, alkoholfri øl med mango, alkoholfri øl med citrus, alkoholfri øl med lidt alkohol, alkoholfri øl med sodavandsmag, alkoholfri øl og sundhed, alkoholfri øl med venner, alkoholfri øl er sundt, alkoholfri øl i fællesskabet">
 
@@ -29,10 +29,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--Overskriften er  font-family: "Montserrat", sans-serif; -->
-
+    <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css"> 
     <script src="script.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
 
 </head>
 
@@ -41,70 +41,150 @@
 <body id="body">
   <header>
     <nav class="fixed-nav">
-      <ul class="sidebar">
-        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="26px" height="26px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="event.html">Event</a></li>
-        <li class="dropdown"><a href="#" onclick="toggleDropdown(event, 'season-dropdown')">Seasonøl hi<i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu" id="season-dropdown">
-            <li><a href="#">Sommerøl</a></li>
-            <li><a href="#">Efterårsøl</a></li>
-            <li><a href="#">Påskeøl</a></li>
-            <li><a href="#">Juleøl</a></li>
-          </ul>
-        </li>
-        <li><a href="smagsvarianter.html">Smagsvarianter</a></li>
-        <li><a href="kurv.html">Kurv</a></li>
-      </ul>
-      <ul>
-        <li class="burgermenu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="26px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg></a></li>
-
-        <li class="logo-container">
-          <a href="index.html"><img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo"></a>
-        </li>
-        <li class="hideOnMobile"><a href="index.html">Forside</a></li>
-        <li class="hideOnMobile"><a href="event.html">Event</a></li>
-        <li class="hideOnMobile dropdown"><a href="season-oel.html">Seasonøl<i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sommerøl</a></li>
-            <li><a href="#">Efterårsøl</a></li>
-            <li><a href="#">Påskeøl</a></li>
-            <li><a href="#">Juleøl</a></li>
-          </ul>
-        </li>
-        <li class="hideOnMobile"><a href="smagsvarianter.html">Smagsvarianter</a></li>
-        <li><a href="kurv.html"><img src="assets/icons/shopping-cart-24.png" alt = ""></a></li>
-      </ul>
-    </nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="26px" height="26px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li class="dropdown"><a href="#" onclick="toggleDropdown(event, 'season-dropdown')">Seasonøl hi<i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu" id="season-dropdown">
+              <li><a href="#">Sommerøl</a></li>
+              <li><a href="#">Efterårsøl</a></li>
+              <li><a href="#">Påskeøl</a></li>
+              <li><a href="#">Juleøl</a></li>
+            </ul>
+          </li>
+          <li><a href="smagsvarianter.html">Smagsvarianter</a></li>
+          <li><a href="kurv.html">Kurv</a></li>
+        </ul>
+        <ul>
+          <li class="burgermenu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="26px" height="26px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g></svg></a></li>
+  
+          <li class="logo-container">
+            <a href="index.html"><img src="assets/icons/logo/zerobuzzbrew-text-logo-white.webp" alt="ZeroBuzz Brew's Logo" class="logo"></a>
+          </li>
+          <li class="hideOnMobile"><a href="index.html">Forside</a></li>
+          <li class="hideOnMobile"><a href="event.html">Event</a></li>
+          <li class="hideOnMobile dropdown"><a href="#">Seasonøl<i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sommerøl</a></li>
+              <li><a href="#">Efterårsøl</a></li>
+              <li><a href="#">Påskeøl</a></li>
+              <li><a href="#">Juleøl</a></li>
+            </ul>
+          </li>
+          <li class="hideOnMobile"><a href="smagsvarianter.html">Smagsvarianter</a></li>
+          <li><a href="kurv.html"><img src="assets/icons/shopping-cart-24.png" alt = ""></a></li>
+        </ul>
+      </nav>
   </header>
 
   <!-------------INDHOLDET STARTER NEDENUNDER------------------->
 
-  <section>
-
-    <section class="">
-         <img src="assets/images/lime-can-pic.webp" alt="" class="img-crop"> 
-
-         <article>
-            
-         </article>
+   
+  <section class="shop-container">
+    <h1 class="special-title">SMAGSVARIANTER</h1>
     
+    <section class="dropdown-box">
+        <button class="dropbtn">Sortere efter</button>
+        <div class="dropdown-content">
+            <a href="#">Fra A-Å</a>
+            <a href="#">Biligeste</a>
+            <a href="#">Dyreste</a>
+            <a href="#">Populæreste</a>
+        </div>
     </section>
 
 
+    <!--Content-->
+    <div class="shop-content" >
+
+         <!--Box 1-->
+        <div class="product-box">
+         <img src="assets/images/lime-can-pic.webp" alt="En alkoholfri øl med lime smag" class="img-crop">
+         <h2>Citrus Flavored Øl</h2>
+         <h4>SWEET & SODA-LIKE</h4>
+         <span>0,5% vol</span> 
+         <span class="price">Pris pr. stk: 7,50 kr</span> 
+         <button>Tilføj til kurv</button>
+        </div>
+
+        <!--Box 2-->
+        <div class="product-box">
+            <img src="assets/images/peach-can-pic.webp" alt="En alkoholfri øl med fersken  smag" class="img-crop"> 
+            <h2>Fersken Flavored Øl</h2>
+            <h4>JUICY & REFRESHING </h4>
+            <span>0,5% vol</span> 
+            <span class="price">Pris pr. stk: 7,50 kr</span> 
+            <button>Tilføj til kurv</button>
+           </div>
+
+
+        <!--Box 3-->
+        <div class="product-box">
+            <img src="assets/images/strawberry-can-pic.webp" alt="En alkoholfri øl med jordbær smag" class="img-crop"> 
+            <h2>Jordbær Flavored Øl</h2>
+            <h4>SWEET & BRIGHT</h4>
+            <span>0,5% vol</span> 
+            <span class="price">Pris pr. stk: 6,33 kr</span> 
+            <button>Tilføj til kurv</button>
+           </div>
+        
+        
+         <!--Box 4-->
+        <div class="product-box">
+            <img src="assets/images/mango-can-pic.webp" alt="En alkoholfri øl med  mango smag" class="img-crop">
+            <h2>Mango Flavored Øl</h2>
+            <h4>TROPICAL & CREAMY</h4>
+            <span>0,5% vol</span> 
+            <span class="price">Pris pr. stk: 12,45 kr</span> 
+            <button>Tilføj til kurv</button>
+           </div>
+    </div>
+   </section>
    
-    <img src="assets/images/peach-can-pic.webp" alt="" class="img-crop"> 
-    <img src="assets/images/strawberry-can-pic.webp" alt="" class="img-crop"> 
-    <img src="assets/images/mango-can-pic.webp" alt="" class="img-crop">
-
-    </section>
-   
 
 
+
+    
 
     <!----------------FOOTEREN STARTER NEDENUNDER--------------->
 
-    
+    <footer>
+        <section class="footer-wrapper">
+          <aside class="footer-info" >
+            <section>
+              <h2>ZeroBuzz Brew</h2>
+            </section>
+            <section>
+              <h3>Kontakt os </h3>
+              <span
+                >E-mail: service@zerobuzz.dk</span>
+            </section>
+          </aside>
+          <section class="footer-social-media">
+            <ul>
+              <li>
+                <a href="#" class="facebook"
+                  ><img src="assets/icons/social-media-icons/icons8-facebook.svg" alt="facebook ikon"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="instagram"
+                  ><img src="assets/icons/social-media-icons/icons8-instagram.svg" alt="Instagram ikon"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="tiktok"
+                  ><img src="assets/icons/social-media-icons/icons8-tiktok.svg" alt="tiktok ikon"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="copyright">
+          <small>&copy; Copyright 2024, www.zerobuzzbrew.dk</small>
+        </section>
+      </footer>
  
 
  
