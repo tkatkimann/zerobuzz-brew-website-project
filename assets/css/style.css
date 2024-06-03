@@ -13,12 +13,12 @@
 }
 
 html {
-  /* Not widely supported */
+  /*tegnsætningstegn placeres uden for tekstenes marginer  */
   hanging-punctuation: first last;
 }
 
 
-/* responsive images */
+/* responsive billeder */
 
 img,
 picture,
@@ -27,14 +27,14 @@ svg {
   max-width: 100%;
 }
 
-/*For images to not be able to exceed their container */
+/*for at billeder ikke skal kunne overskride deres beholder*/
 img {
   max-inline-size: 100%;
   max-block-size: 100%;
 }
 
 
-/* Improve media defaults */
+/* Forbedre mediestandarder */
 img,
 picture,
 canvas,
@@ -43,7 +43,7 @@ svg {
   max-width: 100%;
 }
 
-/* Remove built-in form typography styles */
+/* fjerner indbyggede typografi stilarter */
 input,
 button,
 textarea,
@@ -104,9 +104,9 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Sørg for at navbaren vises øverst */
-  background-color: #fe636b; /* Behold den samme baggrundsfarve */
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Behold skyggen */
+  z-index: 1000; /* Sørger for at navbaren vises øverst */
+  background-color: #fe636b; /* grundlæggende baggrundsfarve */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Tilføjer skygge bag navbaren */
 }
 
 nav{
@@ -263,7 +263,7 @@ nav li:first-child{
 
 .forside-billede1 {
   position: relative;
-  display: inline-block; /* Sørg for at billedet ikke strækker sig mere end dets eget indhold */
+  display: inline-block; /* sørger for at billedet ikke strækker sig mere end dets eget indhold */
 }
 
 .runde-hjørner {
@@ -272,13 +272,13 @@ nav li:first-child{
   border-radius: 10px; /* billeder */
 }
 
-/*Forsidens knapper starter nedenunder*/
+/*forsidens knapper starter nedenunder*/
 
 
 .btn-link {
   position: absolute;
-  bottom: 40px; /* Juster disse værdier efter behov */
-  left: 25px;   /* Juster disse værdier efter behov */
+  bottom: 40px; 
+  left: 25px;   
   background-color: #fe636b;
   color: white;
   border-radius: 5px;
@@ -288,12 +288,12 @@ nav li:first-child{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
-  text-decoration: none; /* Fjerner understregning fra ankerelementet */
+  text-decoration: none; /* fjerner understregning fra ankerelementet */
   display: inline-block; /* Sikrer, at knapstilen anvendes korrekt */
 }
 
 .btn-link:hover {
-  background-color: #ff4f58; /* Ændrer baggrundsfarve ved hover */
+  background-color: #ff4f58; 
 }
 
 .btn-link:active {
@@ -312,12 +312,12 @@ nav li:first-child{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
-  text-decoration: none; /* Fjerner understregning fra ankerelementet */
-  display: inline-block; /* Sikrer, at knapstilen anvendes korrekt */
+  text-decoration: none; 
+  display: inline-block; 
 }
 
 .btn2-link:hover {
-  background-color: #305e9b; /* Ændrer baggrundsfarve ved hover */
+  background-color: #305e9b; 
 }
 
 .btn2-link:active {
@@ -344,7 +344,7 @@ nav li:first-child{
 }
 
 .slider::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; 
 }
 
 .slider img{
@@ -397,8 +397,8 @@ nav li:first-child{
   font-size: 14px;
   border: none;
   cursor: pointer;
-  width: 200px; /* Fast bredde */
-  text-align: center; /* Juster tekst til venstre for et pænt udseende */
+  width: 200px; 
+  text-align: center; 
 }
 
 .dropbtn:hover {
@@ -409,7 +409,7 @@ nav li:first-child{
   display: none;
   position: absolute;
   background-color: #595959;
-  width: 200px; /* Samme bredde som knappen */
+  width: 200px; /* så at dropdown får samme bredde som knappen */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-size: 14px;
@@ -431,7 +431,7 @@ nav li:first-child{
 }
 
 
-/*Produkterne starter nedenunder*/
+/*Produkterne starter nedenunder (Smagsvarianter-siden)*/
 
 .shop-container {
   padding: 5rem 3rem 4rem 3rem;
@@ -446,7 +446,7 @@ nav li:first-child{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem; /* Adjust padding as needed */
+  padding: 1rem; 
   border-radius: 10px;
 }
 
@@ -455,8 +455,6 @@ nav li:first-child{
   border: 3px solid #f79499;
   
 }
-
-
 
 
 .product-box img{
@@ -621,14 +619,14 @@ nav li:first-child{
 footer {
   background-color: #e15058;
   position: relative;
-  padding-bottom: 50px; /* Tilføj padding for at skabe plads til copyright teksten */
+  padding-bottom: 50px; 
 }
 
 .footer-wrapper {
   padding: 20px;
   display: flex;
-  justify-content: space-between; /* Fordel pladsen jævnt mellem elementer */
-  align-items: flex-end; /* Juster elementerne til bunden */
+  justify-content: space-between; /* Fordeler plads jævnt mellem elementer */
+  align-items: flex-end; /* justere elementerne til bunden */
  
 }
 
@@ -639,19 +637,19 @@ footer {
 
 .footer-social-media {
   display: flex;
-  align-items: center; /* Centrer elementerne lodret */
-  margin-left: auto; /* Flyt elementerne til højre */
+  align-items: center; /* centrerer elementerne lodret */
+  margin-left: auto; /* flytter elementerne til højre */
 }
 
 .footer-social-media ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Placer elementerne vandret */
+  display: flex; /* placer elementerne vandret */
 }
 
 .footer-social-media li {
-  margin-left: 10px; /* Tilføj mellemrum mellem ikonerne */
+  margin-left: 10px; /* tilføjer mellemrum mellem ikonerne */
 }
 
 
@@ -663,7 +661,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0; /* Sørg for at copyright teksten er centreret */
+  left: 0; /* sørger for at copyright teksten er centreret */
 }
 
 
