@@ -182,7 +182,7 @@ nav li:first-child{
 
 .sidebar .dropdown-menu{
   position: static;
-  background-color: #6b4a4c;
+  background-color:  #a83939;
 }
 
 .sidebar a {
@@ -269,7 +269,7 @@ nav li:first-child{
 .runde-hjørner {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* eller hvor meget du vil runde hjørnerne */
+  border-radius: 10px; /* billeder */
 }
 
 /*Forsidens knapper starter nedenunder*/
@@ -327,6 +327,55 @@ nav li:first-child{
 
 /*Stylling for Event starter nedenunder*/ 
 
+.slider-wrapper{
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  scrollbar-width: none; 
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+   width: 0.5rem;
+   height: 0.5rem;
+   border-radius: 50%;
+   background-color: #fff;
+   opacity: 0.75;
+   transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+  opacity: 1;
+}
+
 .heart{
   margin-top:10px;
   text-align: center;
@@ -382,7 +431,7 @@ nav li:first-child{
 }
 
 
-
+/*Produkterne starter nedenunder*/
 
 .shop-container {
   padding: 5rem 3rem 4rem 3rem;
@@ -398,7 +447,25 @@ nav li:first-child{
   flex-direction: column;
   align-items: center;
   padding: 1rem; /* Adjust padding as needed */
+  border-radius: 10px;
 }
+
+.product-box:hover{
+  padding: 15px;
+  border: 3px solid #f79499;
+  
+}
+
+
+
+
+.product-box img{
+  border-radius: 10px;
+  height:300px;
+  object-fit:cover;
+  object-position:center;
+}
+
 
 .product-box h2 {
   color: white;
@@ -418,6 +485,134 @@ nav li:first-child{
   gap: 1.5rem;
 }
 
+.product-box button{
+  margin-top: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 45px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+}
+
+.product-box button:hover{
+  background-color: #ACD64C;
+
+}
+
+.product-box button:active {
+  transform: scale(0.96);
+}
+
+/**STYLLING AF KURV STARTER NEDENUNDER**/
+
+.special-2{
+  padding: 5rem 1rem 0px;
+}
+
+.varer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+}
+
+.product-img {
+  margin-right: 20px;
+  height:150px;
+  width:100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+
+.produkt-beskrivelse {
+  flex-grow: 1;
+}
+
+.product-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.minus, .plus {
+  width: 35px;
+  height: 25px;
+  background-color: #D9D9D9;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.quantity {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+
+
+.trash-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.checkout{
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ACD64C;
+  color: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+
+.checkout:hover{
+  background-color: #c2ed5c;
+}
+
+.checkout:active {
+  transform: scale(0.96);
+}
+
+
+@media (min-width: 800px) {
+  .quantity-control {
+      margin-left: 0;
+  }
+
+  .cart-item {
+      justify-content: space-between;
+  }
+}
 
 
 
