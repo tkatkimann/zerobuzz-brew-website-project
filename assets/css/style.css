@@ -327,6 +327,38 @@ nav li:first-child{
 
 /*Stylling for Event starter nedenunder*/ 
 
+
+.btn-container-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-event {
+  margin-top: 2rem;
+  background-color: #3D71C0;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none; 
+  display: inline-block;
+
+}
+
+.btn-event:hover {
+  background-color: #305e9b; 
+}
+
+.btn-event:active {
+  transform: scale(0.96);
+}
+
 .slider-wrapper{
   position: relative;
   max-width: 48rem;
@@ -466,6 +498,7 @@ nav li:first-child{
 
 
 .product-box h2 {
+  margin-top: 10px;
   color: white;
 }
 
